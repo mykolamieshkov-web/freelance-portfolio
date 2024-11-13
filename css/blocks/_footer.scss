@@ -1,0 +1,18 @@
+.footer {
+display: flex;
+justify-self: center;
+justify-content: center;
+margin-block: $margin-y;
+max-width: 261px;
+padding: 8px;
+max-height: 42px;
+p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: #828282;
+}
+
+}

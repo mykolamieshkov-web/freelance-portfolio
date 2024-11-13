@@ -1,0 +1,74 @@
+.portfolio {
+    width: 100%;
+    min-height: 2100px;
+    margin-block: $margin-y;
+    // .portfolio__heading
+
+    &__heading {
+        max-width: 144px;
+        min-height: 40px;
+        margin-block: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+    }
+
+    // .portfolio__heading--item
+
+    &__heading--item {
+        font-size: 34px;
+        line-height: calc(51 / 34 * 100%);
+        letter-spacing: 0;
+        font-weight: 600;
+    }
+
+    // .portfolio__column
+
+    &__column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        flex: 0 0 auto;
+
+    }
+
+    // .portfolio__column--container
+
+    &__column--container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 10px;
+        flex-flow: column nowrap;
+        row-gap: 30px;
+        img {
+            display: block;
+            margin-inline: auto;
+            flex: 0 0 auto;
+            @include mobile {
+                max-width: 315px;
+                min-height: 170px;
+            }
+
+        }
+        a {
+            font-size: 18px;
+            line-height: 27px;
+            text-decoration: underline;
+            text-align: center;
+            letter-spacing: 0;
+            color: #070707;
+            font-weight: 400;
+            transition: all 20ms ease;
+            @include hover {
+                color: var(--hover);
+                text-decoration: none;
+            }
+
+
+        }
+    }
+}
+
